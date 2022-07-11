@@ -1,0 +1,66 @@
+.modal {
+  background-color: #111111;
+  color: white;
+  text-align: center;
+  padding: 40px 45px;
+  width: 550px;
+  max-height: 400px;
+  z-index: 10;
+  position: fixed;
+  top: 20vh;
+  left: calc(50% - 275px);
+
+  .close__btn {
+    font-size: 38px;
+    font-weight: 300;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #ff0000;
+    }
+  }
+
+  &__content {
+    font-weight: 200;
+  }
+  &__title {
+    font-size: 22px;
+    font-weight: 200;
+  }
+  &__text {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+  &__confirmation {
+    background: #62c584;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .modal {
+    top: 17vh;
+    width: 100%;
+    left: 0;
+  }
+}

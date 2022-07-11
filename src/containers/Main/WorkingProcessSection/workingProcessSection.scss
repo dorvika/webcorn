@@ -1,0 +1,207 @@
+.working-process {
+  position: relative;
+
+  &__title {
+    padding-top: 140px;
+  }
+
+  &__list {
+    margin: 40px auto 0 auto;
+    width: 60%;
+    text-align: right;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__list-item {
+    padding-bottom: 30px;
+    &:nth-child(2) {
+      align-self: flex-end;
+      text-align: left;
+      margin-right: -7px;
+    }
+    &:nth-child(3) {
+      margin-left: 55px;
+    }
+
+    h4 {
+      font-weight: 500;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 300;
+      margin-bottom: 5px;
+    }
+  }
+}
+.progress__bar {
+  position: absolute;
+  top: 50%;
+  right: 49%;
+  &-circle {
+    position: relative;
+    border: 2px solid #ff0000;
+    border-radius: 100%;
+    width: 23px;
+    height: 23px;
+    margin-top: 120px;
+    background-color: #222;
+
+    &:first-child {
+      margin-top: -50px;
+    }
+
+    &::before {
+      position: absolute;
+      border: 1px solid #ff0000;
+      height: 120px;
+      content: "";
+      left: 50%;
+      top: -123px;
+      margin-left: -1px;
+    }
+    &:first-child::before {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .working-process__list {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .working-process__list {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .working-process {
+    &__title {
+      padding-top: 80px;
+    }
+  }
+  .progress__bar {
+    top: 45%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .working-process__list {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .working-process__list {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .working-process {
+    &__list {
+      align-items: center;
+    }
+    &__list-item {
+      text-align: left;
+      margin-left: 80px;
+      &:nth-child(2) {
+        align-self: center;
+      }
+      &:nth-child(3) {
+        margin-left: 33px;
+      }
+    }
+  }
+  .progress__bar {
+    top: 46%;
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .progress__bar {
+    top: 51%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .working-process {
+    &__list {
+      align-items: flex-start;
+    }
+    &__list-item {
+      margin-left: 50px;
+      &:nth-child(2) {
+        align-self: flex-start;
+        margin-left: 50px;
+      }
+      &:nth-child(3) {
+        margin-left: 50px;
+      }
+    }
+  }
+  .progress__bar {
+    left: 6%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .progress__bar {
+    top: 44%;
+  }
+}
+
+@media screen and (max-width: 474px) {
+  .progress__bar {
+    top: 48%;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .working-process {
+    &__list-item {
+      padding-bottom: 60px;
+    }
+  }
+  .progress__bar {
+    top: 41%;
+    &-circle {
+      margin-top: 180px;
+      &::before {
+        height: 180px;
+        top: -183px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .progress__bar {
+    top: 40%;
+    &-circle {
+      margin-top: 220px;
+      &::before {
+        height: 220px;
+        top: -223px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .progress__bar {
+    top: 38%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .progress__bar {
+    top: 32%;
+  }
+}

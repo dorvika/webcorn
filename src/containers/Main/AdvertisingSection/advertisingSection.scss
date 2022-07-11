@@ -1,0 +1,27 @@
+.advertising {
+  text-align: center;
+  padding-bottom: 90px;
+  background-image: -webkit-linear-gradient(
+    bottom,
+    rgb(44, 43, 43),
+    rgb(19, 18, 18)
+  );
+  &__title {
+    padding: 90px 0 20px 0;
+  }
+
+  &__text {
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 2;
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .advertising {
+    &__text {
+      font-size: 18px;
+    }
+  }
+}
