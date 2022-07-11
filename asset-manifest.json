@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/webcorn/static/css/main.0de02874.css",
+    "main.js": "/webcorn/static/js/main.e6307220.js",
+    "static/media/background-2.jpg": "/webcorn/static/media/background-2.987d44d81b401b835a17.jpg",
+    "static/media/background-1.jpg": "/webcorn/static/media/background-1.446d0fc13c7b00cee4ca.jpg",
+    "index.html": "/webcorn/index.html",
+    "main.0de02874.css.map": "/webcorn/static/css/main.0de02874.css.map",
+    "main.e6307220.js.map": "/webcorn/static/js/main.e6307220.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0de02874.css",
+    "static/js/main.e6307220.js"
+  ]
+}
